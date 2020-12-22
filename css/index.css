@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/* reset */
+* {margin: 0;padding: 0; font-family: 'Permanent Marker', cursive;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+
+/*header*/
+
+/*main*/
+.main{ width: 100%; height: 1080px; position: relative;}
+.main h2{ position: absolute; left: 45%; transform: translateX(-50%); z-index: 100; top: 11%; font-size: 120px; color: #fff76a; text-align: center; line-height: .9; text-shadow: 10px 10px 10px #111, 9px 9px 9px #000;}  
+.main img{ position: absolute; top: -150px; height: 100%; width: 100%; object-fit: cover;}
+
+/*about*/
+.about{ width: 100%; height: 628px; position: relative; margin: 0 auto;}
+.about .aboutCon{ width: 1280px; height: 100%; margin: auto;}
+.about .aboutCon .left{ width: 35%;  text-align: center; }
+.about .aboutCon .left h2{font-size: 50px; position: relative; display: block; z-index: 2;}
+.about .aboutCon .left h2:after{ content: ""; width: 50%; height: 25px; background: #bfd49e; position: absolute; bottom: 0; left: 45%; z-index: -1;}
+.about .aboutCon .left img{ width: 378px; height: 504px; border-radius: 20px; margin-top: 80px;}
+.about .aboutCon .right{ width: 65%; display: block;height: 100%; position: absolute; right: 0; top: 0;}
+.about .aboutCon .right ul{ position: absolute; bottom: 0; margin-left: 115px;}
+.about .aboutCon .right ul li{ padding-top: 30px;}
+.about .aboutCon .right ul li h3{ display: inline-block; width: 155px; font-size: 28px;}
+.about .aboutCon .right ul li span{ font-size: 24px; margin-left: 35px;}
+
+/*project*/
+.project .projectCon{width: 100%; height: 860px; position: relative; margin: 150px auto 50px; background: #ffce89; z-index: 1;}
+.project .projectCon h2{ padding-top: 85px; font-size: 50px; text-align: center; position: relative;}
+.project .projectCon h2:after{ content: ""; width: 20%; height: 25px; background: #bfd49e; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); z-index: -1;}
+.project .projectCon ul{width: 1280px; margin: auto; margin-top: 50px;}
+.project .projectCon ul li{ width: 378px; height: 278px; float: left; margin: 0 30px 30px 0; box-sizing: border-box; position: relative;}
+.project .projectCon ul li .modalCon{ position: absolute; width: 100%; height: 100%; top: 50%; left: 50%; transform: translate(-50%,-50%); opacity: 0; transition: all .5s; background: rgba(0, 0, 0, 0.4); z-index: 120;}
+.project .projectCon ul li:hover .modalCon{ opacity: 1;}
+.project .projectCon ul li:nth-child(3){ margin-right: 0;}
+.project .projectCon ul li img{ width: 100%; height: 100%; object-fit: cover;}
+
+/*footer*/
+footer .fTop{ width: 100%; height: 300px; position: relative;  text-align: center; }
+footer .fTop h2{ font-size: 30px; padding-top: 30px;}
+footer .fTop .fImg{ margin-top: 22px;}
+footer .fTop .fImg img{ padding: 0 10px 0;}
+footer .fTop .fTxt{ margin-top: 22px; font-weight: 100;}
+footer .fTop .fTxt h3{ font-weight: 100; font-size: 20px;}
+footer .fBtm{ width: 100%; height: 200px; position: relative; background: #bfd49e; text-align: center;}
+footer .fBtm h2{ font-size: 40px;  top: 50%; left: 50%; transform: translate(-50%, -50%); position: absolute;}
+
+/*modal*/
+button{ all: unset; color: #fff; padding: 15px 25px; border-radius: 6px; cursor: pointer; top: 50%; left: 50%; transform: translate(-50%,-50%);font-size: 30px; position: absolute;}
+.modal{ position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; z-index: 999;}
+.md_overlay{ background: rgba(0,0,0,.6); width: 100vw; height: 100vh; position: absolute;}
+.md_content{ width: 20%; position: relative; padding: 50px 100px; background: #fff; text-align: center; border-radius: 6px; box-shadow: 0 10px 20px rgba(0,0,0,0.20), 0 6px 6px rgba(0, 0, 0, 0.20);}
+.hidden {
+    display: none;
+}
+.modal_text { padding: 16px; }
