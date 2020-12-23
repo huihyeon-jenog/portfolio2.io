@@ -38,7 +38,7 @@ header nav .gnb li a:after{ display: none;}
 .main .mainTxt.motion ul li:nth-child(1) h3:after{content: ""; width: 80%; height: 30px; position: absolute; left: 30%; bottom: 0; background: #ec524b; z-index: -1; animation: slideleft2 1s}
 .main .mainTxt.motion ul li:nth-child(2) h3:after{content: ""; width: 80%; height: 30px; position: absolute; left: 30%; bottom: 0; background: #0278ae; z-index: -1; animation: slideleft2 1.4s}
 .main .mainTxt.motion ul li:nth-child(3) h3:after{content: ""; width: 80%; height: 30px; position: absolute; left: 30%; bottom: 0; background: #ffe05d; z-index: -1; animation: slideleft2 1.8s}
-.main > div span{position: absolute; top: 58%; left: 50%; transform: translateX(-50%); font-size: 40px; font-weight: 500; animation: down 2s infinite;}
+.main .clickMove{position: absolute; top: 58%; left: 50%; transform: translateX(-50%); font-size: 40px; font-weight: 500; animation: down 2s infinite;}
 
 /*about*/
 .about{ width: 100%; height: 628px; position: relative; margin: 0 auto;}
