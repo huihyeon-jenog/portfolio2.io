@@ -7,18 +7,30 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 </head>
 <body>
     <header>
+        <span class="bg">
+        </span>
+        <a href="#" class="open"><span class="lnr lnr-menu"></span></a>
+        <nav>
+            <a href="#" class="close"><span class="lnr lnr-cross"></span></a>
+            <ul class="gnb">
+                <li><a href="#aboutMove">about</a></li>
+                <li><a href="#ProjectMove">project</a></li>
+                <li><a href="#contactMove">contact</a></li>
+            </ul>
+        </nav>
     </header>
     <section class="main">
-        <h2>jeong<br>hui hyeon.</h2>
+        <h2 class="animate" data-animate="motion">jeong<br><span>hui hyeon.</span></h2>
         <img src="img/main.png" alt="">
     </section>
-    <section class="about">
-        <div class="aboutCon">
+    <section class="about" id="aboutMove">
+        <div class="aboutCon animate" data-animate="motion">
             <div class="left">
-                <h2>ABOUT ME</h2>
+                <h2 >ABOUT ME</h2>
                 <img src="img/정희현.jpg" alt="">
             </div>
             <div class="right">
@@ -47,55 +59,71 @@
             </div>
         </div>
     </section>
-    <section class="project">
-        <div class="projectCon">
+    <section class="project" id="ProjectMove">
+        <div class="projectCon animate" data-animate="motion">
             <h2>PORJECT</h2>
             <ul>
-                <li><img src="img/p1.png" alt="">
-                    <div class="modalCon">
-                        <button id="open">
-                            개인 포트폴리오 사이트
-                        </button>
-                    </div>
-                
-                    <div class="modal hidden">
-                        <div class="md_overlay"></div>
-                        <div class="md_content">
-                            <h1>샘플 모달창</h1>
-                            <div class="modal_text">
-                                자바스크립트로 모달창을 만들어 봤습니다.
-                            </div>
-                            <button>❌</button>
-                        </div>
-                    </div></li>
-                <li><img src="img/p2.png" alt=""></li>
-                <li><img src="img/p3.png" alt=""></li>
-                <li><img src="img/p4.png" alt=""></li>
-                <li><img src="img/p5.png" alt=""></li>
+                <li ><img src="img/p1.png" alt="">
+                    <div><a href="https://huihyeon-jenog.github.io/creamcheese.io/" target="_blank"><img src="img/button.png" alt=""></a></div>
+                    <h3 style="font-family: Arial, Helvetica, sans-serif;">
+                        개인 포트폴리오 사이트
+                        <p style="font-family: Arial, Helvetica, sans-serif;">RESPONSIVE</p>
+                    </h3>
+                </li>
+                <li><img src="img/p2.png" alt="">
+                    <div><a href="https://huihyeon-jenog.github.io/creamcheese.io/" target="_blank"><img src="img/button.png" alt=""></a></div>
+                    <h3 style="font-family: Arial, Helvetica, sans-serif;">
+                        쇼핑몰 리디자인(크림치즈마켓)
+                        <p style="font-family: Arial, Helvetica, sans-serif;">PC WEB</p>
+                    </h3>
+                </li>
+                <li><img src="img/p3.png" alt="">
+                    <div><a href="https://huihyeon-jenog.github.io/ToDoLists.io/" target="_blank"><img src="img/button.png" alt=""></a></div>
+                    <h3 style="font-family: Arial, Helvetica, sans-serif;">
+                        TODOLIST
+                        <p style="font-family: Arial, Helvetica, sans-serif;">PC WEB</p>
+                    </h3>
+                </li>
+                <li><img src="img/p4.png" alt="">
+                    <div><a href="https://huihyeon-jenog.github.io/doit.io/" target="_blank"><img src="img/button.png" alt=""></a></div>
+                    <h3 style="font-family: Arial, Helvetica, sans-serif;">
+                        클론코딩(이지스 퍼블리싱)
+                        <p style="font-family: Arial, Helvetica, sans-serif;">PC WEB</p>
+                    </h3>
+                </li>
+                <li><img src="img/p5.png" alt="">
+                    <div><a href="https://portfolio.huihyeon.site/" target="_blank"><img src="img/button.png" alt=""></a></div>
+                    <h3 style="font-family: Arial, Helvetica, sans-serif;">
+                        개인 포트폴리오
+                        <p style="font-family: Arial, Helvetica, sans-serif;">RESPONSIVE</p>
+                    </h3>
+                </li>
             </ul>
         </div>
     </section>
     <footer>
-        <div class="fTop">
+        <div class="fTop" id="contactMove">
             <h2>CONTACT US</h2>
             <div class="fImg">
-                <a href="#">
+                <a href="https://www.facebook.com/profile.php?id=100003644936326" target="blank">
                     <img src="img/facebook.png" alt="페이스북으로 이동">
                 </a>
-                <a href="#">
+                <a href="https://www.instagram.com/hh_524__/" target="blank">
                     <img src="img/instagram.png" alt="인스타그램으로 이동">
                 </a>
             </div>
             <div class="fTxt">
-                <h3>PHONE 010 2755 4413<br>
+                <h3 >PHONE 010 2755 4413<br>
                 EMAIL wjdgmlgus5@naver.com</h3>
             </div>
         </div>
-        <div class="fBtm">
+        <div class="fBtm animate" data-animate="motion">
             <h2>반짝인다고 해서 반드시 다 금은 아니다.<br>
-                All that glitters is not gold</h2>
+                <Span>All that glitters is not gold</Span></h2>
         </div>
     </footer>
-    <script src="js/modal.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/scrolla.jquery.min.js"></script>
+    <Script src="js/index.js"></Script>
 </body>
 </html>
