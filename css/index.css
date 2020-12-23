@@ -9,8 +9,8 @@ img {vertical-align: middle;}
 a img {border: none;}
 li {list-style: none;}
 address, em, i {font-style: normal;}
-
 /*header*/
+header{ width: 100vw; height: 30px; position: relative;}
 header .open{ position: fixed; right: 2%; font-size: 50px; font-weight: bold; cursor: pointer; display: block; width: 50px; height: 50px; z-index: 1000;}
 header .close{ display: none;}
 header .bg{ position: absolute; top: 0; left: 0; display: block; width: 100%; height: 100vh; background: rgba(0,0,0,0.6); z-index: 200; display: none;}
@@ -29,6 +29,15 @@ header nav .gnb li a:after{ display: none;}
 .main img{ position: absolute; top: -150px; height: 100%; width: 100%; object-fit: cover;}
 .main h2.motion{ animation: opacity-ani .7s;}
 .main h2.motion span{ animation: opacity-ani 1.7s;}
+.main .mainTxt{ position: absolute; top: 53%; left: 10%; font-size: 3em;}
+.main .mainTxt ul{ display: flex;}
+.main .mainTxt ul li{ margin-right: 60px; position: relative;}
+.main .mainTxt.motion ul li:nth-child(1) {animation: up .6s;}
+.main .mainTxt.motion ul li:nth-child(2) {animation: up 1s;}
+.main .mainTxt.motion ul li:nth-child(3) {animation: up 1.4s;}
+.main .mainTxt.motion ul li:nth-child(1) h3:after{content: ""; width: 80%; height: 30px; position: absolute; left: 30%; bottom: 0; background: #ec524b; z-index: -1; animation: slideleft2 1s}
+.main .mainTxt.motion ul li:nth-child(2) h3:after{content: ""; width: 80%; height: 30px; position: absolute; left: 30%; bottom: 0; background: #0278ae; z-index: -1; animation: slideleft2 1.4s}
+.main .mainTxt.motion ul li:nth-child(3) h3:after{content: ""; width: 80%; height: 30px; position: absolute; left: 30%; bottom: 0; background: #ffe05d; z-index: -1; animation: slideleft2 1.8s}
 
 /*about*/
 .about{ width: 100%; height: 628px; position: relative; margin: 0 auto;}
@@ -66,7 +75,7 @@ header nav .gnb li a:after{ display: none;}
 
 /*footer*/
 footer .fTop{ width: 100%; height: 300px; position: relative;  text-align: center; }
-footer .fTop h2{ font-size: 30px; padding-top: 30px;}
+footer .fTop h2{ font-size: 30px; padding-top: 30px; position: relative;}
 footer .fTop .fImg{ margin-top: 22px;}
 footer .fTop .fImg img{ padding: 0 10px 0; transition: all .5s;}
 footer .fTop .fImg a:hover img{ transform: scale(1.6);}
@@ -102,6 +111,7 @@ footer .fBtm h2 span{ font-size: 26px; font-weight: 100; color: #efefef}
     .main{ height: 860px;}
     .main h2{ font-size: 80px; top: 7%;}
     .main img{ width: 100%; height: 100%;}
+    .main .mainTxt{font-size: 40px;}
 
     .about .aboutCon .left{ text-align: left; margin-left: 2%;}
     .about .aboutCon.motion .left h2{font-size: 30px;  left: 12%;}
@@ -131,6 +141,7 @@ footer .fBtm h2 span{ font-size: 26px; font-weight: 100; color: #efefef}
     .main{ height: 740px;}
     .main h2{ font-size: 50px; top: 9%;}
     .main img{ width: 100%; height: 100%;}
+    .main .mainTxt{display: none;}
     
     .about .aboutCon .left{ width: 100vw; margin: 0; text-align: center; position: relative;}
     .about .aboutCon.motion .left h2{font-size: 30px; position: absolute; width: 100%; text-align: center; left: 0;}

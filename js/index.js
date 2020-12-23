@@ -11,11 +11,10 @@ $(function(){
         $("header .bg").css({"display":"block"});
         $("header nav").addClass("on");
     });
-    $("header .close, header .bg").on("click",function(){
+    $("header .close, header .bg, header nav ul li a").on("click",function(){
         $("body").css({"overflow":"auto"});
-        $("header .open").css({"display":"block"});
-
         $("header .bg").css({"display":"none"});
+        $("header .open").css({"display":"block"});
         $("header nav").removeClass("on");
     });
 });
