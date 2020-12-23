@@ -21,7 +21,7 @@ $(function(){
 
 
 $(document).ready(function(){
-    $(".gnb li a").click(function(e){
+    $(".gnb li a, .clickMove a").click(function(e){
         e.preventDefault();
         $("html,body").animate({scrollTop:$(this.hash).offset().top},500)
     })
