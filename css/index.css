@@ -58,8 +58,8 @@ header nav .gnb li a:after{ display: none;}
 .project .projectCon.motion h2{ padding-top: 65px; font-size: 50px; text-align: center; position: relative; animation: up 1s;}
 .project .projectCon.motion h2:after{ content: ""; width: 20%; height: 25px; background: #bfd49e; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); z-index: -1; animation: slideleft2 1.2s;}
 .project .projectCon ul{width: 1200px; margin: 0px auto 20px; height: 100%; position: relative;}
-.project .projectCon ul li{ width: 33.3333%; height: 278px; float: left; padding: 15px; box-sizing: border-box; position: relative; transition:all .6s; cursor: pointer;} 
-.project .projectCon ul li > div{ position: absolute; width: 100%; height: 100%; background: rgba(0,0,0,.3); top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center; opacity: 0; transition: all .5s; cursor: pointer;}
+.project .projectCon ul li{ width: 400px; height: 278px; float: left; padding: 15px; box-sizing: border-box; position: relative; transition:all .6s; cursor: pointer;} 
+.project .projectCon ul li > div{ position: absolute; width: 380px; height: 95%; background: rgba(0,0,0,.3); top: 50%;transform: translateY(-50%); text-align: center; opacity: 0; transition: all .5s; cursor: pointer;}
 .project .projectCon ul li > div:hover{ opacity: 1;}
 .project .projectCon ul li > div img{ width: 90px; height: 90px; top: 50%; left: 50%; transform: translate(-50%,-50%); position: absolute;}
 .project .projectCon ul li:hover{ transform: scale(1.2); z-index: 10;}
