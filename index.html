@@ -38,7 +38,7 @@
     <section class="about" id="aboutMove">
         <div class="aboutCon animate" data-animate="motion">
             <div class="left">
-                <h2 >ABOUT ME</h2>
+                <h2 class="mobileHidden">ABOUT ME</h2>
                 <img src="img/정희현.jpg" alt="">
             </div>
             <div class="right">
@@ -61,9 +61,59 @@
                     </li>
                     <li>
                         <h3>SKILLS</h3>
-                        <span style="font-family: Arial, Helvetica, sans-serif;">HTML CSS JAVASCTIPT JQUERY 포토샵 일러스트</span>
+                        <button class="aboutModal  animate" data-animate="motion" id="open" style="font-family: Arial, Helvetica, sans-serif;"><a href="#aboutMove">&#62;&#62;	CLICK!	&#60;&#60;</a>	</button>
+                        <div class="modal hidden">
+                            <div class="modal_overlay"></div>
+                            <div class="modal_content">
+                                <h1>SKILL</h1>
+                                <ul>
+                                    <li><h2>HTML</h2> 
+                                        <div class="bar">
+                                            <div class="barfill"></div>
+                                        </div>
+                                    </li>
+                                    <li><h2>CSS</h2>
+                                        <div class="bar">
+                                            <div class="barfill"></div>
+                                        </div>
+                                    </li>
+                                    <li><h2>JAVASCRIPT </h2>
+                                        <div class="bar">
+                                            <div class="barfill"></div>
+                                        </div>
+                                    </li>
+                                    <li><h2>JQUERY </h2>
+                                        <div class="bar">
+                                            <div class="barfill"></div>
+                                        </div>
+                                    </li>
+                                    <li><h2>NODE.JS </h2>
+                                        <div class="bar">
+                                            <div class="barfill"></div>
+                                        </div>
+                                    </li>
+                                    <li><h2>REACT </h2>
+                                        <div class="bar">
+                                            <div class="barfill"></div>
+                                        </div>
+                                    </li>
+                                    <li><h2>PHOTOSHOP</h2>
+                                        <div class="bar">
+                                            <div class="barfill"></div>
+                                        </div>
+                                    </li>
+                                    <li><h2>ILLUSTRATOR</h2>
+                                        <div class="bar">
+                                            <div class="barfill"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="closeModal">❌</div>
+                            </div>
+                        </div>
                     </li>
                 </ul>
+                
             </div>
         </div>
     </section>
@@ -71,47 +121,65 @@
         <div class="projectCon animate" data-animate="motion">
             <h2>PORJECT</h2>
             <ul>
-                <li ><img src="img/project1.png" alt="">
-                    <div><a href="https://portfolio.huihyeon.site/" target="_blank"><img src="img/button.png" alt=""></a></div>
-                    <h3 style="font-family: Arial, Helvetica, sans-serif;">
-                        개인 포트폴리오 사이트</h3>
+                <li>
+                    <div class="projectBox">
+                        <img src="img/project1.png" alt="개인포트폴리오사이트">
+                        <div>
+                            <a href="https://portfolio.huihyeon.site/" target="_blank">LEARN MORE</a>
+                        </div>
+                        <h3 style="font-family: Arial, Helvetica, sans-serif;">개인 포트폴리오 사이트</h3>
                         <p style="font-family: Arial, Helvetica, sans-serif;">RESPONSIVE</p>
-                    
+                    </div>
                 </li>
-                <li><img src="img/project2.png" alt="">
-                    <div><a href="https://huihyeon-jenog.github.io/creamcheese.io/" target="_blank"><img src="img/button.png" alt=""></a></div>
-                    <h3 style="font-family: Arial, Helvetica, sans-serif;">
-                        쇼핑몰 리디자인(크림치즈마켓)</h3>
+                <li>
+                    <div class="projectBox">
+                        <img src="img/project2.png" alt="쇼핑몰 리디자인(크림치즈마켓)">
+                        <div>
+                            <a href="https://huihyeon-jenog.github.io/creamcheese.io/" target="_blank">LEARN MORE</a>
+                        </div>
+                        <h3 style="font-family: Arial, Helvetica, sans-serif;">쇼핑몰 리디자인(크림치즈마켓)</h3>
                         <p style="font-family: Arial, Helvetica, sans-serif;">PC WEB</p>
-                    
+                    </div>
                 </li>
-                <li><img src="img/project3.png" alt="">
-                    <div><a href="https://huihyeon-jenog.github.io/ToDoLists.io/" target="_blank"><img src="img/button.png" alt=""></a></div>
-                    <h3 style="font-family: Arial, Helvetica, sans-serif;">
-                        TODOLIST</h3>
+                <li>
+                    <div class="projectBox">
+                        <img src="img/project3.png" alt="TODOLIST">
+                        <div>
+                            <a href="https://huihyeon-jenog.github.io/ToDoLists.io/" target="_blank">LEARN MORE</a>
+                        </div>
+                        <h3 style="font-family: Arial, Helvetica, sans-serif;">TODOLIST</h3>
                         <p style="font-family: Arial, Helvetica, sans-serif;">PC WEB</p>
-                    
+                    </div>
                 </li>
-                <li><img src="img/project4.png" alt="">
-                    <div><a href="https://huihyeon-jenog.github.io/doit.io/" target="_blank"><img src="img/button.png" alt=""></a></div>
-                    <h3 style="font-family: Arial, Helvetica, sans-serif;">
-                        클론코딩(이지스 퍼블리싱) </h3>
+                <li>
+                    <div class="projectBox">
+                        <img src="img/project4.png" alt="클론코딩(이지스 퍼블리싱)">
+                        <div>
+                            <a href="https://huihyeon-jenog.github.io/doit.io/" target="_blank">LEARN MORE</a>
+                        </div>
+                        <h3 style="font-family: Arial, Helvetica, sans-serif;">클론코딩(이지스 퍼블리싱) </h3>
                         <p style="font-family: Arial, Helvetica, sans-serif;">PC WEB</p>
-                   
+                    </div>
                 </li>
-                <li><img src="img/project5.png" alt="">
-                    <div><a href="https://huihyeon-jenog.github.io/portfoliotest.io/." target="_blank"><img src="img/button.png" alt=""></a></div>
-                    <h3 style="font-family: Arial, Helvetica, sans-serif;">
-                        개인 포트폴리오</h3>
+                <li>
+                    <div class="projectBox">
+                        <img src="img/project5.png" alt="개인 포트폴리오">
+                        <div>
+                            <a href="https://huihyeon-jenog.github.io/portfoliotest.io/." target="_blank">LEARN MORE</a>
+                        </div>
+                        <h3 style="font-family: Arial, Helvetica, sans-serif;">개인 포트폴리오</h3>
                         <p style="font-family: Arial, Helvetica, sans-serif;">RESPONSIVE</p>
-                    
+                    </div>
                 </li>
-                <li><img src="img/p6.png" alt="">
-                    <div><a href="https://huihyeon-jenog.github.io/-.io/." target="_blank"><img src="img/button.png" alt=""></a></div>
-                    <h3 style="font-family: Arial, Helvetica, sans-serif;">
-                        클론코딩(전북은행-작업중) </h3>
+                <li>
+                    <div class="projectBox">
+                        <img src="img/p6.png" alt="클론코딩(전북은행-작업중)">
+                        <div>
+                            <a href="https://huihyeon-jenog.github.io/-.io/." target="_blank">LEARN MORE</a>
+                        </div>
+                        <h3 style="font-family: Arial, Helvetica, sans-serif;">클론코딩(전북은행-작업중) </h3>
                         <p style="font-family: Arial, Helvetica, sans-serif;">PC WEB</p>
-                   
+                    </div>
                 </li>
                 
             </ul>
@@ -139,6 +207,7 @@
         </div>
     </footer>
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/modal.js"></script>
     <script src="js/scrolla.jquery.min.js"></script>
     <Script src="js/index.js"></Script>
 </body>

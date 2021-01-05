@@ -11,12 +11,12 @@ li {list-style: none;}
 address, em, i {font-style: normal;}
 /*header*/
 header{ width: 100vw; height: 30px; position: relative;}
-header .open{ position: fixed; right: 2%; font-size: 50px; font-weight: bold; cursor: pointer; display: block; width: 50px; height: 50px; z-index: 1000;}
+header .open{ position: fixed; right: 5%; font-size: 50px; font-weight: bold; cursor: pointer; display: block; width: 50px; height: 50px; z-index: 1;}
 header .close{ display: none;}
-header .bg{ position: absolute; top: 0; left: 0; display: block; width: 100%; height: 100vh; background: rgba(0,0,0,0.6); z-index: 200; display: none;}
-header nav{ position: absolute; background: #fff; width: 0%; height: 100vh; overflow: hidden; right: 0; top: 0; transition: width 0.3s; z-index: 300;}
+header .bg{ position: absolute; top: 0; left: 0; display: block; width: 100%; height: 100vh; background: rgba(0,0,0,0.6); z-index: 2; display: none;}
+header nav{ position: absolute; background: #fff; width: 0%; height: 100vh; overflow: hidden; right: 0; top: 0; transition: width 0.3s; z-index: 2;}
 header nav.on{ width: 70%; max-width: 300px;}
-header nav .close{ display: block; position: absolute; font-size: 40px; padding-top: 5px; box-sizing: border-box; top: 0px; right: 3%}
+header nav .close{ display: block; position: absolute; font-size: 40px; padding-top: 5px; box-sizing: border-box; top: 0px; right: 3%; z-index: 100;}
 header nav .gnb{ margin-top: 100px;}
 header nav .gnb li{ display: block; width: 100%; margin: 0; line-height: 60px; transition: all .8s;}
 header nav .gnb li a{width: 100%; font-size: 30px; padding-left: 30px; box-sizing: border-box;}
@@ -25,7 +25,7 @@ header nav .gnb li a:after{ display: none;}
 
 /*main*/
 .main{ width: 100%; height: 1080px; position: relative;}
-.main h2{ position: absolute; left: 45%; transform: translateX(-50%); z-index: 100; top: 11%; font-size: 120px; color: #fff76a; text-align: center; line-height: .9; text-shadow: 10px 10px 10px #111, 9px 9px 9px #000;}  
+.main h2{ position: absolute; left: 45%; transform: translateX(-50%); z-index: 1; top: 11%; font-size: 120px; color: #fff76a; text-align: center; line-height: .9; text-shadow: 10px 10px 10px #111, 9px 9px 9px #000;}  
 .main img{ position: absolute; top: -150px; height: 100%; width: 100%; object-fit: cover;}
 .main h2.motion{ animation: opacity-ani .7s;}
 .main h2.motion span{ animation: opacity-ani 1.7s;}
@@ -43,7 +43,7 @@ header nav .gnb li a:after{ display: none;}
 .about{ width: 100%; height: 628px; position: relative; margin: 0 auto;}
 .about .aboutCon{ width: 1200px; height: 100%; margin: auto;}
 .about .aboutCon .left{ width: 35%;  text-align: center; }
-.about .aboutCon.motion .left h2{font-size: 50px; position: relative; display: block; z-index: 2; animation: slideleft 1s;}
+.about .aboutCon.motion .left h2{font-size: 50px; position: relative; display: block; z-index: 1; animation: slideleft 1s;}
 .about .aboutCon.motion .left h2:after{ content: ""; width: 50%; height: 25px; background: #bfd49e; position: absolute; bottom: 0; left: 45%; z-index: -1; animation: slideleft2 2s;}
 .about .aboutCon .left img{ width: 378px; height: 504px; border-radius: 20px; margin-top: 80px;}
 .about .aboutCon .right{ width: 65%; display: block;height: 100%; position: absolute; right: 0; top: 5%;}
@@ -53,26 +53,30 @@ header nav .gnb li a:after{ display: none;}
 .about .aboutCon.motion .right ul li span{ font-size: 24px; margin-left: 35px; animation: up 2.2s; display: block; position: relative;}
 .about .aboutCon .right ul li span:before{ content: ""; width: 15px; height: 15px; border-radius: 50%; background: #bfd49e; position: absolute; left: -20px; top: 50%; transform: translateY(-50%);}
 
+
 /*project*/
-.project .projectCon{width: 100%; height: 760px; position: relative; margin: 150px auto 50px; background: #ffce89; z-index: 1;}
+.project .projectCon{width: 100%; height: 940px; position: relative; margin: 150px auto 50px; background: #ffce89;}
 .project .projectCon.motion h2{ padding-top: 65px; font-size: 50px; text-align: center; position: relative; animation: up 1s;}
 .project .projectCon.motion h2:after{ content: ""; width: 20%; height: 25px; background: #bfd49e; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); z-index: -1; animation: slideleft2 1.2s;}
-.project .projectCon ul{width: 1200px; margin: 0px auto 20px; height: 100%; position: relative;}
-.project .projectCon ul li{ width: 400px; height: 278px; float: left; padding: 15px; box-sizing: border-box; position: relative; transition:all .6s; cursor: pointer;} 
-.project .projectCon ul li > div{ position: absolute; width: 380px; height: 95%; background: rgba(0,0,0,.3); top: 50%;transform: translateY(-50%); text-align: center; opacity: 0; transition: all .5s; cursor: pointer;}
-.project .projectCon ul li > div:hover{ opacity: 1;}
-.project .projectCon ul li > div img{ width: 90px; height: 90px; top: 50%; left: 50%; transform: translate(-50%,-50%); position: absolute;}
-.project .projectCon ul li:hover{ transform: scale(1.2); z-index: 10;}
-.project .projectCon ul li:hover h3, .project .projectCon ul li:hover p{color: #fff;}
+.project .projectCon ul{width: 1200px; margin: 80px auto 20px; height: 100%; position: relative;}
+.project .projectCon ul li{ width: 390px; height: 300px; float: left; padding: 15px; box-sizing: border-box; position: relative; transition:all .6s; cursor: pointer;} 
+.project .projectCon ul li .projectBox{ width: 100%; height: 100%; position: absolute; overflow: hidden;  text-align: center;}
+.project .projectCon ul li:hover .projectBox img{ opacity: 0;}
+.project .projectCon ul li .projectBox img{ position: absolute; left: 0; top: 0; object-fit: cover; width: 100%; height: 100%; transition: all .5s;}
+.project .projectCon ul li .projectBox > div a{ display: block; width: 200px; height: 40px; border:2px solid #ec524b; position: absolute; bottom: -20%; line-height: 40px; left: 50%; transform: translateX(-50%); text-align: center; transition: all .5s;}
+.project .projectCon ul li:hover .projectBox > div a{ bottom: 20%;}
+.project .projectCon ul li .projectBox > div a:hover{ bottom: 20%; background: #ec524b; color: #fff;}
 .project .projectCon ul li img{ width: 378px; height: 201px; object-fit: cover;}
-.project .projectCon ul li h3{ width: 370px; height: 50px; bottom: 2px; position: absolute; padding:5px 0 5px 0; box-sizing: border-box; color: #000;}
-.project .projectCon ul li p{ color: rgb(61, 61, 61); font-weight: normal; font-size: 15px;}
-.project .projectCon.motion ul li:nth-child(1){animation: up 2.5s;}
-.project .projectCon.motion ul li:nth-child(2){animation: up 3s;}
-.project .projectCon.motion ul li:nth-child(3){animation: up 3.5s;}
-.project .projectCon.motion ul li:nth-child(4){animation: up 4s;}
-.project .projectCon.motion ul li:nth-child(5){animation: up 4.5s;}
-.project .projectCon.motion ul li:nth-child(6){animation: up 5s;}
+.project .projectCon ul li h3{ width: 100%; height: 50px; top: -20%; position: absolute; padding:5px 0 5px 0!important; box-sizing: border-box; color: #000; font-size: 20px; transition: all .5s; left: -1px!important;}
+.project .projectCon ul li:hover h3{  top: 20%; }
+.project .projectCon ul li p{ color: rgb(61, 61, 61); font-size: 15px; position: absolute; top: -35%; transition: all .5s; color: #ec524b; width: 100%; margin: 0 auto;} 
+.project .projectCon ul li:hover p{ top: 33%;} 
+.project .projectCon.motion ul li:nth-child(1){animation: up 1s;}
+.project .projectCon.motion ul li:nth-child(2){animation: up 1.3s;}
+.project .projectCon.motion ul li:nth-child(3){animation: up 1.6s;}
+.project .projectCon.motion ul li:nth-child(4){animation: up 1.9s;}
+.project .projectCon.motion ul li:nth-child(5){animation: up 2.1s;}
+.project .projectCon.motion ul li:nth-child(6){animation: up 2.4s;}
 
 
 /*footer*/
@@ -86,10 +90,39 @@ footer .fTop .fTxt h3{ font-weight: 100; font-size: 20px;}
 footer .fBtm{ width: 100%; height: 200px; position: relative; background: #bfd49e; text-align: center;}
 footer .fBtm.motion h2{ font-size: 30px;  top: 50%; left: 50%; transform: translate(-50%, -50%); position: absolute; color:  #fff76a; animation: up2 1s;}
 footer .fBtm h2 span{ font-size: 26px; font-weight: 100; color: #efefef}
+
+/*modal*/
+.aboutModal.motion{ border: none; background: none;outline: none; bottom: 0; font-size: 1.5em; animation: up 1s; text-shadow: 1px 1px 1px rgba(0,0,0,.23);}
+.aboutModal a{transition: all .5s; color: #fff76a; }
+.aboutModal a:hover{ color: salmon;}
+.closeModal{ cursor: pointer; position: fixed; right: 5%; top: 50px; font-size: 30px; line-height: 50px;}
+.modal{ position: fixed; top: 0; left: 0; width: 100%; height: 100%;}
+.modal_overlay{ background: rgba(0,0,0,0.6); width: 100%; height: 100%; position: absolute; z-index: 1;}
+.modal_content{ background: #ffffff; padding: 50px; text-align: center; position: absolute;  top: 0; right: 0; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,.23); width: 48%; height: 100%; z-index: 1; animation: modalDown .8s;}
+.modal_content h1{ font-size: 40px;}
+.modal_content ul{position: absolute; top: 18%; left: 0; margin: 0; padding: 0;}
+.modal_content ul li{ font-size: 20px; display: flex; width: 44vw; line-height: 30px;}
+.modal_content ul li h2{ width: 200px; text-align: left;}
+.modal_content ul li .bar{ width: 100%; background: #ddd; right: 0; top: 0; box-shadow: 5px 5px 10px rgba(0,0,0,.23); position: relative;}
+.modal_content ul li:nth-child(1) .barfill{ width: 85%; height: 30px; background:  #fff76a; animation: width-ani 2s ease-in-out;}
+.modal_content ul li:nth-child(2) .barfill{ width: 85%; height: 30px; background:  #fff76a; animation: width-ani 2s ease-in-out;}
+.modal_content ul li:nth-child(3) .barfill{ width: 60%; height: 30px; background:  #fff76a; animation: width-ani 2s ease-in-out;}
+.modal_content ul li:nth-child(4) .barfill{ width: 40%; height: 30px; background:  #fff76a; animation: width-ani 2s ease-in-out;}
+.modal_content ul li:nth-child(5) .barfill{ width: 40%; height: 30px; background:  #fff76a; animation: width-ani 2s ease-in-out;}
+.modal_content ul li:nth-child(6) .barfill{ width: 40%; height: 30px; background:  #fff76a; animation: width-ani 2s ease-in-out;}
+.modal_content ul li:nth-child(7) .barfill{ width: 65%; height: 30px; background:  #fff76a; animation: width-ani 2s ease-in-out;}
+.modal_content ul li:nth-child(8) .barfill{ width: 75%; height: 30px; background:  #fff76a; animation: width-ani 2s ease-in-out;}
+.hidden{ display: none!important;}
+
 /*animation*/
 @keyframes up{
     0%{opacity: 0;}
    50%{opacity: 0; transform: translateY(40px);}
+}
+@keyframes modalDown{
+    0%{opacity: 0;}
+    50%{opacity: 0; transform: translateY(-100%);}
+
 }
 @keyframes up2{
     0%{opacity: 0;}
@@ -120,7 +153,21 @@ footer .fBtm h2 span{ font-size: 26px; font-weight: 100; color: #efefef}
     0%{opacity: 0;}
     20%{opacity: 0; bottom: 1%;}
 }
+@keyframes width-ani{
+    0%{width: 1%;}
+    40%{width: 1%;}
+}
 
+
+@media screen and (max-width: 1200px){
+    .project .projectCon{ margin: 80px 0 20px 0; height: 1250px; width: 100%; }
+    .project .projectCon ul{ width: 800px; height: 500px; }
+    .project .projectCon ul li img{ width: 100%;}
+    .project .projectCon ul li h3 { width: 100%; bottom: 10px; font-size: 14px; left: 2%; padding-left: 10px;}
+    .project .projectCon ul li h3 p{ font-size: 12px;}
+
+
+}
 @media screen and (max-width: 1023px){
     .main{ height: 860px;}
     .main h2{ font-size: 80px; top: 7%;}
@@ -134,13 +181,10 @@ footer .fBtm h2 span{ font-size: 26px; font-weight: 100; color: #efefef}
     .about .aboutCon .right { top: -15%;}
     .about .aboutCon.motion .right ul li h3 {font-size: 24px;}
     .about .aboutCon.motion .right ul li span { font-size: 20px;}
+    .modal_content ul li{ font-size: 15px; display: flex;}
+    .modal_content ul li h2{ width: 200px; text-align: left;}
 
-    .project .projectCon{ margin: 80px 0 20px 0;}
-    .project .projectCon ul{ width: 100%; height: 500px;}
-    .project .projectCon ul li img{ width: 100%;}
-    .project .projectCon ul li h3 { width: 100%; bottom: 10px; font-size: 14px; left: 2%; padding-left: 10px;}
-    .project .projectCon ul li h3 p{ font-size: 12px;}
-
+   
     footer .fTop{height: 200px;}
     footer .fTop h2{ font-size: 20px;}
     footer .fTop .fImg{ margin-top: 10px;}
@@ -151,6 +195,13 @@ footer .fBtm h2 span{ font-size: 26px; font-weight: 100; color: #efefef}
     footer .fBtm.motion h2{ font-size: 20px;}
     footer .fBtm h2 span{ font-size: 16px;}
 }
+
+@media screen and (max-width: 830px){
+
+    .project .projectCon{ height: 1900px;}
+    .project .projectCon ul {margin: 30px 0 0 0; padding: 0; width: 100%;}
+    .project .projectCon ul li{ width: 60%; position: relative; height: 55%;left: 50%; transform: translateX(-50%);}
+}
 @media screen and (max-width: 767px){
     .main{ height: 740px;}
     .main h2{ font-size: 50px; top: 9%;}
@@ -158,21 +209,20 @@ footer .fBtm h2 span{ font-size: 26px; font-weight: 100; color: #efefef}
     .main .mainTxt{display: none;}
     
     .about .aboutCon .left{ width: 100vw; margin: 0; text-align: center; position: relative;}
-    .about .aboutCon.motion .left h2{font-size: 30px; position: absolute; width: 100%; text-align: center; left: 0;}
-    .about .aboutCon.motion .left h2:after{ height: 15px; width: 30%; left: 45%;}
+    .about .aboutCon.motion .left h2{font-size: 50px; position: absolute; width: 100%; text-align: center; left: 0; top: -50px;}
+    .about .aboutCon.motion .left h2:after{ height: 35px; width: 30%; left: 45%;}
     .about .aboutCon .left img{ width: 200px; height: 250px; left: 0;}
     .about .aboutCon .right { position: relative;}
     .about .aboutCon.motion .right ul{top: 15%; text-align: center; margin: 0; width: 100vw;}
     .about .aboutCon.motion .right ul li h3 {font-size: 18px;}
     .about .aboutCon.motion .right ul li:hover h3{ opacity: 1;}
     .about .aboutCon.motion .right ul li{ padding-top: 15px;}
-    .about .aboutCon.motion .right ul li span { font-size: 14px; margin: 0;}
+    .about .aboutCon.motion .right ul li span { font-size: 18px; margin: 0; margin-top: 5px;}
+    .about .aboutCon.motion .right ul li button { font-size: 18px; margin: 0; display: block; left: 50%; transform: translateX(-50%); position: absolute; top: 24%;}
     .about .aboutCon.motion .right ul li span:before{ display: none;}
+    .modal_content ul li{ font-size: .8em; display: flex; width: 54vw}
+    .modal_content ul li h2{ width: 200px; text-align: left; margin-left: 10%;}
 
-    .project .projectCon{ height: 940px;}
-    .project .projectCon ul{ display: flex; flex-wrap: wrap;}
-    .project .projectCon ul li{ width: 50%; position: relative; height: 250px; margin-top: 0;}
-    .project .projectCon ul li h3{display: none;}
 
     footer .fBtm.motion h2{ font-size: 18px; width: 100vw;}
     footer .fBtm h2 span{ font-size: 14px;}
