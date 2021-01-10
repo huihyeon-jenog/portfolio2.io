@@ -80,7 +80,7 @@ header nav .gnb li a:after{ display: none;}
 
 
 /*footer*/
-footer .fTop{ width: 100%; height: 380px; position: relative;  text-align: center;}
+footer .fTop{ width: 100%; height: 100%; position: relative;  text-align: center;}
 footer .fTop h2{ font-size: 30px; padding-top: 30px; position: relative;}
 footer .fTop h2:after{ content: ""; width: 10%; height: 10px; background: #bfd49e; position: absolute; bottom: -5px; left: 50%; transform: translateX(-50%); animation: slideleft2 1.2s;}
 footer .fTop .fImg{ margin-top: 22px;}
@@ -88,10 +88,9 @@ footer .fTop .fImg img{ padding: 0 10px 0; transition: all .5s;}
 footer .fTop .fImg a:hover img{ transform: scale(1.6);}
 footer .fTop .fTxt{ margin-top: 22px; font-weight: 100;}
 footer .fTop .fTxt h3{ font-weight: 100; font-size: 20px;}
-footer .fTop .fTxt > div{ font-weight: 700; font-size: 1.5em; margin-top: 30px; color: rgb(54, 54, 54); letter-spacing: .7px; line-height: 1.5;}
-footer .fTop h4{ font-size: 14px; left: 50%; transform: translateX(-50%); position: absolute; color:  #3b3b3b;  bottom: 20px; margin-right: 5px;}
-footer .fTop h4 > span:before{ content: ""; width: 1.2px; height: 14px; background: rgb(117, 117, 117); position: absolute; left: -2px; top: 50%; transform: translateY(-50%); }
-footer .fTop h4 > span{ position: relative;}
+footer .fTop .fTxt > div{ font-weight: 700; font-size: 1.5em; margin-top: 30px; color: rgb(54, 54, 54); letter-spacing: .7px; line-height: 1.5; padding-bottom: 50px; position: relative;}
+footer .fTop .fTxt > div h4{ font-size: .5em; left: 50%; transform: translateX(-50%); position: absolute; color:  #3b3b3b;  bottom: 0;}
+footer .fTop .fTxt > div h4 > span{ position: relative; padding-bottom: 20px; letter-spacing: -1px;}
 
 
 /*modal*/
