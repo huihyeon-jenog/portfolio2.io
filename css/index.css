@@ -50,6 +50,7 @@ header nav .gnb li a:after{ display: none;}
 .about .aboutCon .right ul{ position: absolute; bottom: 0; margin-left: 12%;}
 .about .aboutCon .right ul li{ padding-top: 30px;}
 .about .aboutCon.motion .right ul li h3{ display: inline-block; width: 155px; font-size: 28px; animation: slideleft 1.5s;}
+.about .aboutCon.motion .right ul li .skillButton{ display: inline-block;}
 .about .aboutCon.motion .right ul li span{ font-size: 24px; margin-left: 35px; animation: up 2.2s; display: block; position: relative;}
 .about .aboutCon .right ul li span:before{ content: ""; width: 15px; height: 15px; border-radius: 50%; background: #bfd49e; position: absolute; left: -20px; top: 50%; transform: translateY(-50%);}
 
@@ -219,6 +220,7 @@ footer .fTop .fTxt > div h4 > span{ position: relative; padding-bottom: 20px; le
     .about .aboutCon.motion .right ul li:hover h3{ opacity: 1;}
     .about .aboutCon.motion .right ul li{ padding-top: 15px;}
     .about .aboutCon.motion .right ul li span { font-size: 18px; margin: 0; margin-top: 5px;}
+    .about .aboutCon.motion .right ul li .skillButton{ display: block;}
     .about .aboutCon.motion .right ul li button { font-size: 18px; margin: 0; display: block; left: 50%; transform: translateX(-50%); position: absolute; top: 24%;}
     .about .aboutCon.motion .right ul li span:before{ display: none;}
     
